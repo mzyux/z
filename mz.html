@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>看到你 心里就会露出 满脸的喜悦</title>
+    <style>
+      #videofilm {
+        width: 100%;
+        height: auto;
+        position: fixed;
+        z-index: -1;
+      }
+      h1{
+        font-size: 36px;
+        color: orange;
+        font-family: "ms sans serif";
+      }
+	  .box{
+	  	font-size: 60px; 
+	  	color:orange;
+		font-family: "ms sans serif";
+	  	animation: changeshadow 3s  ease-in  infinite ;
+	  }  
+	  @keyframes changeshadow {  
+	      0%{ text-shadow: 0 0 5px #ffff9c}  
+		  25%{ text-shadow: 0 0 10px #fdff5e}
+	      50%{ text-shadow: 0 0 20px #ffff00}  
+		  75%{ text-shadow: 0 0 10px #fdff5e} 
+	      100%{ text-shadow: 0 0 5px #ffff9c}  
+	  }
+
+    </style>
+    <link rel="stylesheet" href="css/mz.css">
+  </head>
+  <body>
+    <video id="videofilm" poster="img/mz.jpg" autoplay muted loop>
+      <!-- <source src="video/mz.mp4" type="video/mp4"> -->
+    </video> 	
+	<audio autoplay="autoplay" preload id="music1" hidden>	
+	<source src="video/mzyu.mp3" />	
+	</audio>
+	  <div class="textone">
+      <h1 class="box">Mzyu</h1>
+    </div>
+    <div class="text">
+      <h1>你的名字涂满星光</h1>
+    </div>
+    
+    <div class="container"></div>
+    <script src="js/mz.js"></script>
+  </body>
+</html>
